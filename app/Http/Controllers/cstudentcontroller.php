@@ -11,6 +11,6 @@ class cstudentcontroller extends Controller
     function index()
     {
         $data = cstudent::all();
-        return $data;
+        return view('student/index')->with('data', $data);
     }
 }
